@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 370px;
+    padding: 37px 60px 60px 60px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.lineDiv {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.grayLine {
+    background-color: #d4d2d2;
+    height: 2px;
+    margin-top: 6%;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6B82;
+    text-align: center;
+    margin: 10px;
+}
+
+.option {
+    border: 2px solid #d4d2d2;
+    padding: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.optionDiv {
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.option label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.standardPrice {
+    font-size: 13px;
+    margin-top: 10%;
+    margin-left: -31%;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.discountValue {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.originalValue {
+    color: gray;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-right: 25%;
+}
+
+.hideShowDiv {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.size_color {
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+    gap: 23%;
+}
+
+.size_color div {
+    font-size: 14px;
+}
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.details select {
+    width: 25%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hashtag {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.borderInput {
+    border: 2px solid #FF6B82;
+    border-radius: 50%;
+    width: 14px;
+    height: 15px;
+    margin-top: 2px;
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked {
+    background-color: #FF6B82;
+}
+
+.discount {
+    background: #FF6B82;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.most-popular {
+    padding: 20px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.most-popular::after {
+    content: "MOST POPULAR";
+    background: #FF6B82;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-radius: 3px;
+}
+
+.bottomDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.freeDelivery {
+    font-weight: bold;
+    color: #FF6B82;
+}
+
+.total {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#total {
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #FF6B82;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addToCartSpan {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer {
+    color: #838282;
+    justify-content: end;
+    display: flex;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.toAddBorder {
+    border: 2px solid #FF6B82;
+    background: #fdf3f4;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#closeModal {
+    background-color: #FF6B82;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#closeModal:hover {
+    background-color: #FF6B82;
+}
